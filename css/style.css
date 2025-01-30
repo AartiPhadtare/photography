@@ -1,0 +1,25 @@
+html{
+    font-size: 16px;
+}
+body{
+    font-size: 1rem;
+
+}
+img{
+    min-width: 100%;
+}
+a.navbar-brand img {
+    width: 150px;
+    height: 100%;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1030;
+    right: 0;
+}
+.nav-item .nav-link, .nav-item.active .nav-link{
+    color: white;
+    font-size: 1.2rem;
+}
