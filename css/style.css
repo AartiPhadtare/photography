@@ -9,19 +9,19 @@ body{
   font-style: normal;
 }
 img{
-    min-width: 100%;
+    max-width: 100%;
 }
 a.navbar-brand img {
     width: 150px;
     height: 100%;
 }
 header {
-    background-color: black;
-    /* position: fixed;
+    /* background-color: black; */
+     position: fixed;
     top: 0;
     left: 0;
     z-index: 1030;
-    right: 0; */
+    right: 0; 
 }
 h1{
     font-family: "Yeseva One", serif;
@@ -32,7 +32,12 @@ h1{
     color: white;
     font-size: 1.2rem;
 }
-
+footer .list-group a.list-group-item {
+    background-color: transparent !important;
+    border: 0 !important;
+    color: white;
+    font-size: 1.2rem;
+}
 /*============= slick slider homepage banner ==========*/
 .homepagebanner .slick-dots {
     bottom: 10px !important;
@@ -77,9 +82,9 @@ position: relative;
 }
 
 /*============= services ===============*/
-section#why-choose-me {
+/* section#why-choose-me {
     background: #ffedd8;
-}
+} */
 .service-img{
     transform: scale(1);
     transition: 400ms;
@@ -100,6 +105,12 @@ section#why-choose-me {
     transform: scale(1.1); 
      transition: 400ms; 
 }
+.service-title {
+    background: black;
+    z-index: 9;
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem !important;
+}
 /* #services .slick-prev:before, #services .slick-next:before {
     font-size: 30px;
     opacity: 1 !important;
@@ -110,7 +121,7 @@ section#why-choose-me {
 #services .slick-prev {
     left: -70px;
 } */
- .abt-img{
+ /* .abt-img{
     position: relative;
  }
  .abt-img img {
@@ -123,4 +134,30 @@ section#why-choose-me {
     right: -25px;
     min-width: 15%;
     border: 10px solid white;
- }
+ } */
+ #services .slick-dots li button:before {
+    font-size: 50px !important;
+}
+#services .slick-dots {
+    bottom: -50px;
+}
+
+@media screen and (min-width:767.98px) {
+    .grid-item {
+      width: 31.333%;
+      margin: 0.5rem;
+    }
+    
+  
+    .grid-item img {
+      display: block;
+      max-width: 100%;
+    }
+    
+}
+#filters button {
+    border: 0;
+    background: transparent;
+    padding: 0 1rem;
+    font-size: 1.2rem;
+}
