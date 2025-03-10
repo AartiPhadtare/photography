@@ -153,11 +153,21 @@ position: relative;
       display: block;
       max-width: 100%;
     }
-    
+
 }
 #filters button {
     border: 0;
     background: transparent;
     padding: 0 1rem;
     font-size: 1.2rem;
+}
+
+@media (max-width: 567.99px){
+    nav.navbar.navbar-expand-sm {
+        background: black;
+    }
+    
+    section#homebanner {
+        margin-top: 100px;
+    }
 }
